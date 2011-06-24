@@ -4,6 +4,7 @@ gem 'rails', '3.0.7'
 gem 'haml'
 gem 'sass'
 gem 'css3buttons'
+gem 'devise'
 # gem 'jquery-rails', '>= 0.2.6'
 
 

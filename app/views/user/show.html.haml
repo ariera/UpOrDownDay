@@ -1,0 +1,10 @@
+%h1 How do you feel today?
+#voting_options
+    .vote_up=   link_to 'Up', url_for(:controller => 'user', :action => 'update', :vote => 'up')
+    .vote_down= link_to 'Down', url_for(:controller => 'user', :action => 'update', :vote => 'down')
+
+%hr
+%h2 Your history:
+%ul
+    -@histories.each do |h|
+        = show_status(h)
