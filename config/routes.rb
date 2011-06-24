@@ -1,3 +1,3 @@
-Walle::Application.routes.draw do
+UpOrDownDay::Application.routes.draw do
   root :to => 'home#index'
 end

@@ -4,7 +4,7 @@ gem 'rails', '3.0.7'
 gem 'haml'
 gem 'sass'
 gem 'css3buttons'
-gem 'jquery-rails', '>= 0.2.6'
+# gem 'jquery-rails', '>= 0.2.6'
 
 
 # Bundle edge Rails instead:
@@ -20,7 +20,7 @@ gem 'sqlite3'
 
 # To use debugger (ruby-debug for Ruby 1.8.7+, ruby-debug19 for Ruby 1.9.2+)
 # gem 'ruby-debug'
-# gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'ruby-debug19', :require => 'ruby-debug'
 
 # Bundle the extra gems:
 # gem 'bj'

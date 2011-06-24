@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Walle::Application.load_tasks
+UpOrDownDay::Application.load_tasks
