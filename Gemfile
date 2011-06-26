@@ -5,6 +5,7 @@ gem 'haml'
 gem 'sass'
 gem 'css3buttons'
 gem 'devise'
+gem "rake", "0.8.7"
 # gem 'jquery-rails', '>= 0.2.6'
 
 
