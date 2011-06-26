@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 %html
   %head
-    %title BlankApp
+    %title UpOrDownDay
     = csrf_meta_tag
     = css3buttons_stylesheets
     = stylesheet_link_tag :all
@@ -9,6 +9,8 @@
     = yield :javascripts
   %body
     #wrapper
+      #login_actions.clearfix
+        =login_actions
       #main.clearfix
         %p.notice= notice
         %p.alert= alert

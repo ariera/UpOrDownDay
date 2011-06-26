@@ -7,10 +7,15 @@ class User < ActiveRecord::Base
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me
   
-  has_many :histories
+  has_many :histories, :order => 'created_at ASC'
   
   def add_history(params)
+    last_history = self.histories.last
     up = params[:vote] == 'up'
-    self.histories << History.new(:up => up)
+    if last_history && last_history.is_from_today?
+      last_history.update_attribute(:up, up)
+    else
+      self.histories << History.new(:up => up)
+    end
   end
 end

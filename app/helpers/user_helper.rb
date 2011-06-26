@@ -1,6 +1,6 @@
 module UserHelper
   def show_status(history)
-    html_class = history.up? ? "up" : "down"
-    "<li class='#{html_class}'>#{html_class}</li>".html_safe
+    text = history.up? ? ["up", ":)"] : ["down", ":("]
+    "<li class='#{text[0]}' title='#{history.created_at.strftime("%Y-%m-%d")}'>#{text[1]}</li>".html_safe
   end
 end
